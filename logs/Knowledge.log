@@ -99,3 +99,36 @@
 2026-01-21 20:56:38,816 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 240, Duration: 0ms
 2026-01-21 20:56:39,026 - Knowledge - INFO - Saving knowledge to Redis...
 2026-01-21 20:56:39,215 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-01-26 17:44:32,185 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-26 17:44:32,505 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-26 17:44:32,660 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-26 17:44:32,904 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-26 17:44:33,831 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-26 17:44:34,001 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-26 17:44:34,206 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-26 17:44:34,438 - Knowledge - INFO - Persisted knowledge files in /app/data/T0015/309902/b905367/remote-commands-c_car_platform/.knowledge have been renamed to use .json
+2026-01-26 17:44:34,667 - Knowledge - INFO - Found code-base-name: https://github.com/danielm-kavia/remote-commands-c_car_platform.git:kavia-main
+2026-01-26 17:44:34,855 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f39301ade50>
+2026-01-26 17:44:35,132 - Knowledge - INFO - Found code-base-name: https://github.com/danielm-kavia/remote-commands-c_car_platform.git:kavia-main
+2026-01-26 17:44:35,319 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f39301ade50>
+2026-01-26 17:44:35,479 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/309902/b905367/remote-commands-c_car_platform/README.md
+2026-01-26 17:44:35,760 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-26 17:44:37,707 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: README.md, Duration: 1773ms
+2026-01-26 17:44:37,866 - Knowledge - INFO - persist search terms embedding for README.md
+2026-01-26 17:44:38,037 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/309902/b905367/remote-commands-c_car_platform/README.md
+2026-01-26 17:44:38,220 - Knowledge - INFO - Loaded 1 files from persisted knowledge
+2026-01-26 17:44:38,376 - Knowledge - INFO - load persisted knowledge: end
+2026-01-26 17:44:38,591 - Knowledge - INFO - Redis support added with prefix knowledge:b905367:
+2026-01-26 17:44:38,759 - Knowledge - INFO - Starting knowledge initialization for ID: QtAjSe-b905367
+2026-01-26 17:44:38,953 - Knowledge - INFO - 🔍 Checking Redis for build_id: b905367
+2026-01-26 17:44:39,126 - Knowledge - INFO - 🔍 Full session ID: QtAjSe-b905367
+2026-01-26 17:44:39,300 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b905367:
+2026-01-26 17:44:39,452 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-26 17:44:39,606 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-26 17:44:39,761 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b905367
+2026-01-26 17:44:39,941 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2026-01-26 17:44:40,149 - Knowledge - INFO - ✅ Successfully loaded from Redis: 1 files
+2026-01-26 17:44:40,310 - Knowledge - INFO - ✅ Redis load complete: 1 files in 0.86s
+2026-01-26 17:44:40,463 - Knowledge - INFO - ⚡ Total Redis path: 0.86s (vs ~300s from disk)
+2026-01-26 17:44:40,631 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-26 17:44:40,807 - Knowledge - INFO - Knowledge saved to Redis successfully
